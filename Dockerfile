@@ -1,4 +1,4 @@
-FROM ubi8/nodejs-14
+FROM FROM node:14
 
 USER root
 
