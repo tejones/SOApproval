@@ -1,7 +1,8 @@
-FROM node:14
+FROM node:lts-alpine@sha256:b2da3316acdc2bec442190a1fe10dc094e7ba4121d029cb32075ff59bb27390a
 
 USER root
-RUN useradd -ms /bin/bash  redhat
+#RUN useradd -ms /bin/bash  redhat
+RUN adduser -D -u 1001 redhat
 
 RUN mkdir -p /home/redhat/soapproval
 RUN cd /home/redhat/soapproval
