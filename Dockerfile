@@ -7,7 +7,7 @@ ADD . /home/redhat/soapproval
 
 RUN useradd -ms /bin/bash  redhat
 
-RUN chown -R redhat /home/redhat/soapproval
+RUN chown -R redhat /home/redhat
 
 USER redhat
 
