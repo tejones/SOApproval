@@ -1,8 +1,7 @@
-FROM alpine:3.11
+FROM node:14
 
 USER root
-#RUN useradd -ms /bin/bash  redhat
-RUN adduser -D -u 1001 redhat
+RUN adduser --disabled-login -u 1001 redhat
 
 RUN mkdir -p /home/redhat/soapproval
 RUN cd /home/redhat/soapproval
